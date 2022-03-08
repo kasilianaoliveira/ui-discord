@@ -1,13 +1,7 @@
 import React from "react";
 import Logo from "../../assets/Logo.svg";
 import { Button } from "./styles";
-
-export interface Props {
-  selected?: boolean;
-  isHome?: boolean;
-  hasNotifications?: boolean;
-  mentions?: number;
-}
+import { Props } from "./types";
 
 const ServerButton: React.FC<Props> = ({
   selected,

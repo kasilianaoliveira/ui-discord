@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Props } from ".";
+import { Props } from "./types";
 
 export const Button = styled.button<Props>`
   display: flex;
@@ -21,6 +21,7 @@ export const Button = styled.button<Props>`
 
   &::before {
     content: "";
+    display: ${(props) => !props.hasNotifications && "none"};
     width: 9px;
     height: 9px;
 
